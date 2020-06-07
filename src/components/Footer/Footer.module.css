@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+	margin: 0px;
+}
+.footer {
+    overflow: hidden;
+	background-color: #000000;
+	box-shadow: none;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.footer p {
+	color: #fff;
+	text-align: center;
+	margin: 40px;
+}
+
+
+@media screen and (max-width: 500px) {
+	.footer p {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}

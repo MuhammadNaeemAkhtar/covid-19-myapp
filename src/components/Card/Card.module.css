@@ -1,0 +1,48 @@
+.innerContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+.cardConfirmed {
+    margin: 2% 2px !important;
+    background-color: rgba(0, 0, 255, 0.2) !important;
+    color: rgba(0, 0, 255, 1) !important;
+    border: 2px solid !important;
+    align-items: center;
+    width: 170px;
+}
+
+.cardRecovered {
+    margin: 2% 2px !important;
+    background-color: rgba(0, 255, 0, 0.3) !important;
+    color: rgb(40, 146, 40) !important;
+    border: 2px solid !important;
+    align-items: center;
+    width: 170px;
+}
+.cardDeaths {
+    margin: 2% 2px !important;
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    color: rgb(255, 0, 0) !important;
+    border: 2px solid !important;
+    align-items: center;
+    width: 160px;
+}
+
+.cardDeathRate {
+    margin: 2% 2px !important;
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    color: rgb(255, 0, 0) !important;
+    border: 2px solid !important;
+    width: 160px;
+}
+
+.cardRecoveryRate {
+    margin: 2% 2px !important;
+    background-color: rgba(0, 255, 0, 0.3) !important;
+    color: rgb(40, 146, 40) !important;
+    border: 2px solid !important;
+    width: 160px;
+}

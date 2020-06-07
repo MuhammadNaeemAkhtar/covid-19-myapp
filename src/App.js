@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import AppHeader from './components/AppHeader/AppHeader';
+import Cards from './components/Card/Card';
+import CountryDropdown from './components/CountryDropdown/CountryDropdown';
+import Chart from './components/Chart/Chart';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import { getData } from './api';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    state = {
+        data: {},
+        country: '',
+    }
+
+    async componentDidMount() {
+        const fetchedData = await getData();
+        this.setState({ data: fetchedData });
+        //console.log(this.state.data);
+    }
+
+    handleCountryChange = async (country) => {
+        const fetchedData = await getData(country);
+        this.setState({ data: fetchedData, country: country});
+    }
+
+    render() {
+        const { data, country } = this.state;
+        return(
+            <div>
+                <Header />
+                <div className={styles.container}>
+                    <AppHeader />
+                    <CountryDropdown handleCountryChange={this.handleCountryChange} />
+                    <div className={styles.dateClass}><u>Last Update: {new Date(data.lastUpdate).toDateString()}</u></div>
+                    <Cards data={data}/>
+                    <Chart data={data} country={country} />
+                </div>
+                <Footer />
+            </div>
+        )
+    }
 }
 
 export default App;

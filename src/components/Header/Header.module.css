@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+	margin: 0px;
+}
+.header {
+    overflow: hidden;
+    background-color: #5dc9e0;
+    border-width: 1px;
+	border-style: solid;
+	border-color: #797979;
+	border-radius: 0px;
+    box-shadow: none;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+}
+
+.header h1 {
+    color: #ffffff;
+    align-items: center;
+    float: left;
+}
+
+.header a {
+    float: right;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 500px) {
+    .header {
+        height: 150px;
+    }
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.headerRight {
+		float: none;
+    }
+}
