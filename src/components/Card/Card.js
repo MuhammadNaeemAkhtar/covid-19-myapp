@@ -33,23 +33,14 @@ function Cards( {data: {confirmed, recovered, deaths, lastUpdate }}) {
 
             <Card className={cx(styles.cardRecoveryRate, styles.card)}>
                 <CardContent>
-                    <Typography color="textSecondary">Death Rate</Typography>
-                    <Typography variant="h5">
-                        {Math.round(deaths.value/confirmed.value*100)}%
-                    </Typography>
-                </CardContent>
-            </Card>
-
-            <Card className={cx(styles.cardDeaths, styles.card)}>
-                <CardContent>
                     <Typography color="textSecondary">Recovery Rate</Typography>
                     <Typography variant="h5">
                         {Math.round(recovered.value/confirmed.value*100)}%
                     </Typography>
                 </CardContent>
             </Card>
-            
-            <Card className={cx(styles.cardDeathRate, styles.card)}>
+
+            <Card className={cx(styles.cardDeaths, styles.card)}>
                 <CardContent>
                     <Typography color="textSecondary">Deaths</Typography>
                     <Typography variant="h5">
@@ -57,7 +48,15 @@ function Cards( {data: {confirmed, recovered, deaths, lastUpdate }}) {
                     </Typography>
                 </CardContent>
             </Card >
-            
+
+            <Card className={cx(styles.cardDeathRate, styles.card)}>
+                <CardContent>
+                    <Typography color="textSecondary">Death Rate</Typography>
+                    <Typography variant="h5">
+                        {Math.round(deaths.value/confirmed.value*100)}%
+                    </Typography>
+                </CardContent>
+            </Card>            
         </div>
     )
 }

@@ -80,6 +80,7 @@ const Chart = ( {data: {confirmed, recovered, deaths }, country}) => {
                 scales: {
                     yAxes: [{
                         ticks: {
+                            autoSkip: true,
                             beginAtZero: true,
                             max: 100
                         }
@@ -108,6 +109,18 @@ const Chart = ( {data: {confirmed, recovered, deaths }, country}) => {
                         }
                     ],
                 }}
+                options={{
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                autoSkip: true,
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }}
             />
         ): null
     );
@@ -128,6 +141,8 @@ const Chart = ( {data: {confirmed, recovered, deaths }, country}) => {
                     }]
                 }}
                 options={{
+                    responsive: true,
+                    maintainAspectRatio: true,
                     legend: { display: false },
                     title: { display: true, text: `Current state in ${country}`},
                     plugins: {

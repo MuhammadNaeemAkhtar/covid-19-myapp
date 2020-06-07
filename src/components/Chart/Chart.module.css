@@ -1,7 +1,7 @@
 .columnContainer {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     flex: 1 0 auto;
     margin: 20px 0px 50px 0px;
 }
@@ -10,7 +10,6 @@
     flex-flow: row wrap;
     justify-content: center;
     flex: 1 0 auto;
-    margin: 30px;
 }
 
 .pieChartClass {
@@ -19,6 +18,7 @@
 
 .barChartClass {
     width: 500px;
+    padding: 10px;
 }
 
 
@@ -33,6 +33,7 @@
 
     .chartClass {
         width: 300px;
-        margin-left: 70px;
+        margin-left: 50px;
+        padding: 0px;
     }
 }
