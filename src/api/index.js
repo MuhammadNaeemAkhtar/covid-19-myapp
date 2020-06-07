@@ -1,4 +1,3 @@
-import React from 'react';
 import Axios from 'axios';
 
 const url = 'https://covid19.mathdro.id/api';
