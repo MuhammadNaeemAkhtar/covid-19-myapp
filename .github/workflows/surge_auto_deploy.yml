@@ -41,4 +41,4 @@ jobs:
     
     # Deploy app to surge
     - name: Run surge
-      run: surge ./build covid19-Analtics-MNA.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build covid19-Analytics-MNA.surge.sh --token ${{secrets.SURGE_TOKEN}}
