@@ -21,6 +21,9 @@
     padding: 10px;
 }
 
+.chartClass{
+    margin: 40px;
+}
 
 @media (max-width: 770px) {
     .pieChartClass {
@@ -34,6 +37,5 @@
     .chartClass {
         width: 300px;
         margin-left: 50px;
-        padding: 0px;
     }
 }

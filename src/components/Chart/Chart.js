@@ -116,7 +116,8 @@ const Chart = ( {data: {confirmed, recovered, deaths }, country}) => {
                         yAxes: [{
                             ticks: {
                                 autoSkip: true,
-                                beginAtZero: true
+                                beginAtZero: true,
+                                maxTicksLimit: 5
                             }
                         }]
                     }
@@ -155,7 +156,7 @@ const Chart = ( {data: {confirmed, recovered, deaths }, country}) => {
         ): null
     );
     return(
-        <div className={styles.columnContainer}>
+        <div>
             <div className={styles.rowContainer}>
                 <div className={styles.pieChartClass}>
                     {pieChart}
