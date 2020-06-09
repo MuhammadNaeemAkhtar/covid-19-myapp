@@ -2,7 +2,7 @@
 
 SURGE URL: http://covid19-analytics-mna.surge.sh/
 
-#Libraries used
+## Libraries used
 
 npm install --save axios react-chartjs-2 react-countup classnames
 
@@ -18,7 +18,7 @@ react-countup -> help to make animations while counting
 
 classnames -> to put multiple classes together
 
-#NOTES
+## NOTES
 
 Cards.module.css -> if we don't use module then css will be applied over all the components
 
