@@ -1,11 +1,16 @@
 # Covid19 App
 npm install --save axios react-chartjs-2 react-countup classnames
+
 npm install --save @material-ui/core  // To get predefined UI
+
 npm install chartjs-plugin-labels
 
 axios -> helps to get request to the API
+
 react-chartjs-2 -> Library to make charts
+
 react-countup -> help to make animations while counting
+
 classnames -> to put multiple classes together
 
 Cards.module.css -> if we don't use module then css will be applied over all the components
