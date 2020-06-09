@@ -44,6 +44,8 @@ on mobile devices take all the spaces xs={12}
 on medium or upper devices take 3 spaces md={3}
 
 Since we are using material ui we need to use !important in css.
+
+
 //********************************************
 
 Automatically generated documentation
